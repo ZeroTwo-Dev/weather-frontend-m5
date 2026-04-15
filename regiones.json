@@ -1,0 +1,14 @@
+[
+    { "id": 1, "nombre": "Mondstadt", "temp": "22°C", "estado": "Despejado", "icono": "bi-sun", "humedad": "40%", "viento": "10 km/h" },
+    { "id": 2, "nombre": "Espinadragón", "temp": "-15°C", "estado": "Ventisca", "icono": "bi-snow", "humedad": "15%", "viento": "40 km/h" },
+    { "id": 3, "nombre": "Puerto de Liyue", "temp": "28°C", "estado": "Soleado", "icono": "bi-brightness-high", "humedad": "55%", "viento": "12 km/h" },
+    { "id": 4, "nombre": "Inazuma", "temp": "24°C", "estado": "Tormentoso", "icono": "bi-cloud-lightning", "humedad": "75%", "viento": "30 km/h" },
+    { "id": 5, "nombre": "Isla Seirai (Inazuma)", "temp": "22°C", "estado": "Electrificado", "icono": "bi-lightning-charge", "humedad": "70%", "viento": "35 km/h" },
+    { "id": 6, "nombre": "Bosque Avidya", "temp": "26°C", "estado": "Lluvia", "icono": "bi-cloud-rain", "humedad": "85%", "viento": "5 km/h" },
+    { "id": 7, "nombre": "Desierto de Hadramavet", "temp": "42°C", "estado": "Tormenta de Arena", "icono": "bi-wind", "humedad": "5%", "viento": "60 km/h" },
+    { "id": 8, "nombre": "Corte de Fontaine", "temp": "20°C", "estado": "Nublado", "icono": "bi-cloud-sun", "humedad": "60%", "viento": "15 km/h" },
+    { "id": 9, "nombre": "Snezhnaya", "temp": "-30°C", "estado": "Hielo Eterno", "icono": "bi-cloud-snow-fill", "humedad": "10%", "viento": "50 km/h" },
+    { "id": 10, "nombre": "Gran Volcán de Tollan (Natlan)", "temp": "38°C", "estado": "Cenizas", "icono": "bi-fire", "humedad": "12%", "viento": "20 km/h" },
+    { "id": 11, "nombre": "Nod Krai", "temp": "15°C", "estado": "Lluvia Inversa", "icono": "bi-cloud-upload", "humedad": "90%", "viento": "10 km/h" },
+    { "id": 12, "nombre": "Celestia", "temp": "10°C", "estado": "Etéreo", "icono": "bi-magic", "humedad": "0%", "viento": "100 km/h" }
+]

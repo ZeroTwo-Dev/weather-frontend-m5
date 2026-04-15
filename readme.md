@@ -1,11 +1,30 @@
-# Módulo 2 – App de Clima (Teyvat Edition)
-* Estudiante: Cesar Eduardo Ossa Figueroa
-* Repositorio: [LINK_A_TU_REPO_AQUÍ]
+# Módulo 3 – App del Clima (Teyvat Edition)
+* Estudiante: César Ossa
+* Repositorio: https://github.com/ZeroTwo-Dev/weather-frontend-m3.git
 
 # Descripción
-Esta es una aplicación web (MVP) que muestra el clima de diferentes regiones del mundo de Teyvat (Genshin Impact).
-Permite visualizar una grilla de localidades y acceder al detalle de cada una para ver pronósticos específicos.
+Esta es la evolución de mi proyecto de la App del Clima.
+Mantengo la temática de Genshin Impact (Teyvat),
+pero ahora el enfoque fue mejorar la calidad del código CSS,
+organizando mejor los estilos y preparando el prpyecto para algo
+más profesional.
 
+# Mejoras Técnicas
+
+**SASS:** Dividí todo en las carpetas "Base, Component, Layout".
+**Metología BEM:** Usé la clase "place-card__nombre" para que el 
+HTML y CSS se entiendan mejor.
+**Bootstrap 4:** Sigo usando la grilla de Bootstrap para que las regiones de Teyvat se vean bien tanto en celular como en PC.
+**Simulación de API:** Decidí crear un archivo "regiones.json"
+con toda la información de los climas, debido a que no existe ninguna
+API del clima relacionada a Genshin Impact. 
+
+# Estructura del Proyecto:
+**/scss:** Archivos SASS (variables, place-card y layout).
+**/css:** Archivo main.css con generación automática al compilar todos los archivos.
+**/js:** JavaScript mostrando las regiones.
+**regiones.json:** Datos del clima de las diferentes naciones de Teyvat.
+ 
 # Tecnologías Utilizadas
 **HTML5 Semántico:** Estructura clara y accesible.
 **Bootstrap 5:** Diseño responsivo y componentes.

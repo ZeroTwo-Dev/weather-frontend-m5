@@ -1,0 +1,22 @@
+@import '../base/variables.scss';
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/AllRegionsTeyvat.jpeg') no-repeat center fixed;
+    background-size: cover;
+    font-family: $fuente-principal;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 80vh;
+}
+
+.header-teyvat, .footer-teyvat {
+    background-color: $color-oscuro;
+    padding: 20px 0;
+}

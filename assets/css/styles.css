@@ -13,15 +13,15 @@
 
 body {
 
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    background: linear-gradient(rgba(0, 0, 0, 0.525), rgba(255, 255, 255, 0.541)),
         url('../img/AllRegionsTeyvat.jpeg') no-repeat center center fixed;
     background-size: cover;
-    color: white;
+    color: rgb(255, 255, 255);
 
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgb(255, 255, 255);
     backdrop-filter: blur(5px);
-    color: #333;
-}
+    color: #000000;
+}   

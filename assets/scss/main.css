@@ -1,0 +1,43 @@
+.place-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+.place-card:hover {
+  transform: traslateY(-10px);
+}
+.place-card__nombre {
+  font-weight: bold;
+  color: #212529;
+}
+.place-card__temp {
+  font-size: 2rem;
+  color: #666;
+}
+.place-card__boton {
+  background-color: #0dcaf0;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  color: white;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/AllRegionsTeyvat.jpeg") no-repeat center fixed;
+  background-size: cover;
+  font-family: "Arial", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: 80vh;
+}
+
+.header-teyvat, .footer-teyvat {
+  background-color: #212529;
+  padding: 20px 0;
+}/*# sourceMappingURL=main.css.map */

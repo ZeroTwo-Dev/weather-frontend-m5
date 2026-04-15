@@ -1,0 +1,28 @@
+.place-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: traslateY(-10px);
+    }
+
+    &__nombre {
+        font-weight: bold;
+        color: $color-oscuro;
+    }
+
+    &__temp {
+        font-size: 2rem;
+        color: #666;
+    }
+
+    &__boton {
+        background-color: $color-principal;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        color: white;
+    }
+    
+}

@@ -61,6 +61,10 @@ if (document.getElementById('detalle-region')) {
                         <li class="list-group-item">Lunes: ${r.estado}</li>
                         <li class="list-group-item">Martes: ${r.temp}</li>
                         <li class="list-group-item">Miércoles: Estable</li>
+                        <li class="list-group-item">Jueves: ${r.estado}</li>
+                        <li class="list-group-item">Viernes: ${r.temp}</li>
+                        <li class="list-group-item">Sábado: Estable</li>
+                        <li class="list-group-item">Domingo: ${r.estado}, ${r.temp}</li>
                     </ul>
                 </div>
             </div>
