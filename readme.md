@@ -1,35 +1,37 @@
-# Módulo 3 – App del Clima (Teyvat Edition)
+# Módulo 4 – App del Clima (Teyvat Edition)
 * Estudiante: César Ossa
-* Repositorio: https://github.com/ZeroTwo-Dev/weather-frontend-m3.git
+* Repositorio: https://github.com/ZeroTwo-Dev/weather-frontend-m4.git
 
 # Descripción
-Esta es la evolución de mi proyecto de la App del Clima.
-Mantengo la temática de Genshin Impact (Teyvat),
-pero ahora el enfoque fue mejorar la calidad del código CSS,
-organizando mejor los estilos y preparando el prpyecto para algo
-más profesional.
+Esta entrega marca la fase de Lógica y Estadísticas del proyecto. 
+La aplicación ya no solo muestra información visual, 
+sino que procesa datos climáticos de las naciones de Teyvat de forma dinámica. 
+Se modificó contenido del HTML para dar paso a una interfaz generada íntegramente mediante JavaScript.
 
 # Mejoras Técnicas
-
-**SASS:** Dividí todo en las carpetas "Base, Component, Layout".
-**Metología BEM:** Usé la clase "place-card__nombre" para que el 
-HTML y CSS se entiendan mejor.
-**Bootstrap 4:** Sigo usando la grilla de Bootstrap para que las regiones de Teyvat se vean bien tanto en celular como en PC.
-**Simulación de API:** Decidí crear un archivo "regiones.json"
-con toda la información de los climas, debido a que no existe ninguna
-API del clima relacionada a Genshin Impact. 
+**Modelado de Datos Dinámicos:** Se implementó un arreglo de objetos (regiones) que contiene la información actual 
+y el pronóstico semanal de 12 locaciones, incluyendo IDs únicos y estados climáticos específicos.
+**Lógica de Estadísticas:** Se desarrollaron funciones que recorren los arreglos de pronóstico mediante ciclos para calcular: "Temperatura mínima y máxima de la semana".
+**Promedio de temperatura semanal y conteo de climas:** Algoritmo que identifica cuántos días de la semana corresponden a cada estado (Soleado, Tormenta, etc.). 
+**Generación de Mensajes Condicionales:** Implementación de lógica if/else para generar recomendaciones personalizadas al viajero basadas en el promedio de temperatura como alertas de frío extremo en Snezhnaya o calor en Natlan.
+**Manipulación Avanzada del DOM:** Uso de plantillas para inyectar dinámicamente tanto la lista de regiones en el Home como los detalles técnicos en la vista de Detalle.
 
 # Estructura del Proyecto:
-**/scss:** Archivos SASS (variables, place-card y layout).
-**/css:** Archivo main.css con generación automática al compilar todos los archivos.
-**/js:** JavaScript mostrando las regiones.
-**regiones.json:** Datos del clima de las diferentes naciones de Teyvat.
- 
+**/assets/scss:** Arquitectura SASS (Base, Components, Layout) para un mantenimiento escalable.
+**/assets/js/app.js:** El "motor" de la aplicación. Contiene el arreglo de objetos, las funciones de búsqueda y los algoritmos de cálculo estadístico.
+**index.html:** Estructura base que sirve como contenedor para la inyección de cards.
+**detalle.html:** Interfaz dinámica que recibe parámetros por URL para mostrar la información de la región seleccionada
+
+# Estadísticas Calculadas
+**Temperaturas Extremas:** Identifica los picos máximos y mínimos del pronóstico.
+**Promedio Semanal:** Calcula la media aritmética de las temperaturas máximas.
+**Resumen de Aventurero:** Un mensaje de advertencia o sugerencia que cambia según el clima predominante.
+
 # Tecnologías Utilizadas
-**HTML5 Semántico:** Estructura clara y accesible.
-**Bootstrap 5:** Diseño responsivo y componentes.
-**JavaScript:** Manipulación e interacción del DOM e interacción.
-**Git/GitHub:** Control de versiones.
+**JavaScript:** Ciclos, condicionales y manipulación de arreglos.
+**Bootstrap:** Sistema de grillas responsivas (Grid System) y componentes de interfaz.
+**SASS:** Preprocesador de CSS con metodología BEM.
+**Git/GitHub:** Flujo de trabajo incremental con commits descriptivos.
 
 ## Instrucciones de Ejecución
 1. Clonar el repositorio.
