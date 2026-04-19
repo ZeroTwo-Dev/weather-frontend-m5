@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +9,52 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body class="bg-light d-flex flex-column min-vh-100">
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html text-info">
-                    <i class="bi bi-wind"></i> Clima de Teyvat
-                </a>
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </div>
-            </div>
-        </nav>
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-info" href="index.html">
+            <i class="bi bi-wind"></i> Clima de Teyvat
+        </a>
+        
+        <div class="nation-icons-container d-none d-lg-flex">
+            <i class="bi bi-wind" title="Anemo - Mondstadt"></i>
+            <i class="bi bi-geo-alt" title="Geo - Liyue"></i>
+            <i class="bi bi-cloud-lightning" title="Electro - Inazuma"></i>
+            <i class="bi bi-tree" title="Dendro - Sumeru"></i>
+            <i class="bi bi-droplet" title="Hydro - Fontaine"></i>
+            <i class="bi bi-fire" title="Pyro - Natlan"></i>
+            <i class="bi bi-snow" title="Cryo - Snezhnaya"></i>
+        </div>
+
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link active border border-info rounded px-3" href="index.html">Home</a>
+        </div>
+    </div>
+</nav>
     </header>
 
     <main class="container my-5">
-        <section class="text-center mb-5">
-            <h1 class="display-4 fw-bold">Clima de todas las Regiones de Teyvat</h1>
+        <div class="text-center mb-5">
+            <h1 class="display-4">Clima de todas las Regiones de Teyvat</h1>
             <p class="lead">Revisa las condiciones atmosféricas de las naciones antes de iniciar tu aventura.</p>
-        </section>
+        </div>
 
-        <section class="row g-4 justify-content-center" id="contenedor-regiones">
-        </section>
+        <div id="contenedor-regiones" class="row">
+            <div class="col-12 text-center">
+                <p>Cargando datos de Teyvat...</p>
+            </div>
+        </div>
     </main>
 
     <footer class="bg-dark text-white text-center py-4 mt-auto">
-        <p class="mb-0">Genshin Impact &copy; 2026 | Bootcamp Módulo 2</p>
+        <p class="mb-0">Genshin Impact &copy; 2026 | Bootcamp Módulo 5</p>
     </footer>
 
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/WeatherApp.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

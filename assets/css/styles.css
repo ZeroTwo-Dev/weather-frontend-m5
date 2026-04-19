@@ -12,12 +12,27 @@
 }
 
 body {
-
-    background: linear-gradient(rgba(0, 0, 0, 0.525), rgba(255, 255, 255, 0.541)),
-        url('../img/AllRegionsTeyvat.jpeg') no-repeat center center fixed;
-    background-size: cover;
+    margin: 0;
+    padding: 0;
     color: rgb(255, 255, 255);
+    position: relative;
+}
 
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+                url('../img/AllRegionsTeyvat.jpeg') no-repeat center center;
+    background-size: cover;
+    filter: blur(5px); 
+    transform: scale(1.1); 
+    z-index: -1; 
 }
 
 .card {
@@ -25,3 +40,88 @@ body {
     backdrop-filter: blur(5px);
     color: #000000;
 }   
+
+.weather-icon {
+    display: inline-block;
+    font-size: 4.5rem; 
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+}
+
+.place-card, .card.shadow {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px); 
+    border: none;
+}
+
+/* Colores específicos para las 12 naciones de Teyvat */
+
+/* Mondstadt y Liyue */
+.weather-icon[data-clima="Despejado"] { color: #FFEB3B; filter: drop-shadow(0 0 10px #FDD835); }
+.weather-icon[data-clima="Soleado"] { color: #FF9800; filter: drop-shadow(0 0 10px #F57C00); }
+.weather-icon[data-clima="Nublado"] { color: #B0BEC5; filter: drop-shadow(0 0 8px #90A4AE); }
+
+/* Espinadragón y Snezhnaya (Frío extremo) */
+.weather-icon[data-clima="Ventisca"] { color: #B3E5FC; filter: drop-shadow(0 0 12px #E1F5FE); }
+.weather-icon[data-clima="Hielo Eterno"] { color: #E1F5FE; filter: drop-shadow(0 0 15px #00B0FF); }
+.weather-icon[data-clima="Nieve"] { color: #FFFFFF; filter: drop-shadow(0 0 10px #B3E5FC); }
+
+/* Inazuma (Electro) */
+.weather-icon[data-clima="Tormentoso"] { color: #E1BEE7; filter: drop-shadow(0 0 12px #9C27B0); }
+.weather-icon[data-clima="Electrificado"] { color: #D1C4E9; filter: drop-shadow(0 0 15px #673AB7); }
+
+/* Sumeru (Bosque y Desierto) */
+.weather-icon[data-clima="Lluvia"] { color: #4FC3F7; filter: drop-shadow(0 0 10px #0288D1); }
+.weather-icon[data-clima="Húmedo"] { color: #80CBC4; filter: drop-shadow(0 0 8px #4DB6AC); }
+.weather-icon[data-clima="Tormenta de Arena"] { color: #D4A373; filter: drop-shadow(0 0 10px #A68A64); }
+
+/* Fontaine (Agua) */
+.weather-icon[data-clima="Clima estable"] { color: #B2FF59; filter: drop-shadow(0 0 10px #76FF03); }
+
+/* Natlan (Fuego y Cenizas) */
+.weather-icon[data-clima="Cenizas"] { color: #de1111; filter: drop-shadow(0 0 10px #212121); }
+.weather-icon[data-clima="Caluroso"] { color: #FF5722; filter: drop-shadow(0 0 12px #BF360C); }
+
+/* Nod Krai (Lluvia Inversa) */ 
+.weather-icon[data-clima="Lluvia Inversa"] { color: #1DE9B6; filter: drop-shadow(0 0 12px #004D40); }
+
+/* Celestia (Etéreo) */
+.weather-icon[data-clima="Etéreo"] { color: #ffffff; filter: drop-shadow(0 0 20px #FFD700); }
+
+/* Animación cuando pasas el mouse por la tarjeta */    
+.place-card:hover .weather-icon {
+    transform: scale(1.15) translateY(-5px);
+    filter: drop-shadow(0 0 20px currentColor); /* Brilla con su propio color */
+}
+
+/* Contenedor para centrar los iconos */
+.nation-icons-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.nation-icons-container i {
+    font-size: 1.4rem; 
+    margin: 0 18px;    
+    cursor: pointer;
+    transition: all 0.3s ease;
+    filter: saturate(1.5); 
+}
+
+.nation-icons-container i:hover {
+    transform: scale(1.4) translateY(-3px);
+    filter: drop-shadow(0 0 10px currentColor);
+}
+
+/* Colores representativos de cada elemento */
+.nation-icons-container .bi-wind { color: #7af2cf; }            /* Mondstadt */
+.nation-icons-container .bi-geo-alt { color: #ffe667; }         /* Liyue */
+.nation-icons-container .bi-cloud-lightning { color: #e1b1ff; } /* Inazuma */
+.nation-icons-container .bi-tree { color: #a5ea5e; }            /* Sumeru */
+.nation-icons-container .bi-droplet { color: #4cc9f0; }         /* Fontaine */
+.nation-icons-container .bi-fire { color: #ff5d5d; }            /* Natlan */
+.nation-icons-container .bi-snow { color: #90e0ef; }            /* Snezhnaya */
