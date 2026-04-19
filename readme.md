@@ -1,38 +1,48 @@
-# Módulo 4 – App del Clima (Teyvat Edition)
+# Módulo 5 – App del Clima (Teyvat World Weather API)
 * Estudiante: César Ossa
-* Repositorio: https://github.com/ZeroTwo-Dev/weather-frontend-m4.git
+* Repositorio: https://github.com/ZeroTwo-Dev/weather-frontend-m5.git
 
-# Descripción
-Esta entrega marca la fase de Lógica y Estadísticas del proyecto. 
-La aplicación ya no solo muestra información visual, 
-sino que procesa datos climáticos de las naciones de Teyvat de forma dinámica. 
-Se modificó contenido del HTML para dar paso a una interfaz generada íntegramente mediante JavaScript.
+# 1. Descripción y Propósito
+En esta quinta etapa, la aplicación ha evolucionado hacia una arquitectura robusta basada en POO 
+(Programación Orientada a Objetos). Se ha eliminado la dependencia de datos locales estáticos 
+para implementar un sistema de consumo de datos asíncronos mediante una API personalizada que simula las condiciones atmosféricas de las 12 regiones de Teyvat.
 
-# Mejoras Técnicas
-**Modelado de Datos Dinámicos:** Se implementó un arreglo de objetos (regiones) que contiene la información actual 
-y el pronóstico semanal de 12 locaciones, incluyendo IDs únicos y estados climáticos específicos.
-**Lógica de Estadísticas:** Se desarrollaron funciones que recorren los arreglos de pronóstico mediante ciclos para calcular: "Temperatura mínima y máxima de la semana".
-**Promedio de temperatura semanal y conteo de climas:** Algoritmo que identifica cuántos días de la semana corresponden a cada estado (Soleado, Tormenta, etc.). 
-**Generación de Mensajes Condicionales:** Implementación de lógica if/else para generar recomendaciones personalizadas al viajero basadas en el promedio de temperatura como alertas de frío extremo en Snezhnaya o calor en Natlan.
-**Manipulación Avanzada del DOM:** Uso de plantillas para inyectar dinámicamente tanto la lista de regiones en el Home como los detalles técnicos en la vista de Detalle.
+# 2. Estructura de Clases (POO)
+Siguiendo los requisitos técnicos, se implementó una arquitectura modular:
+**WeatherApp:** La clase maestra que orquestra la aplicación. 
+Gestiona el estado de los lugares, coordina las llamadas a la API y decide qué vista (Home o Detalle) renderizar en el DOM.
+**ApiClient:** Clase especializada en la comunicación externa. 
+Utiliza fetch y async/await para obtener los recursos JSON de forma asíncrona.
+**UIHandler:** Encargada exclusivamente de la manipulación del DOM, asegurando una separación clara entre la lógica de negocio y la interfaz.
 
-# Estructura del Proyecto:
-**/assets/scss:** Arquitectura SASS (Base, Components, Layout) para un mantenimiento escalable.
-**/assets/js/app.js:** El "motor" de la aplicación. Contiene el arreglo de objetos, las funciones de búsqueda y los algoritmos de cálculo estadístico.
-**index.html:** Estructura base que sirve como contenedor para la inyección de cards.
-**detalle.html:** Interfaz dinámica que recibe parámetros por URL para mostrar la información de la región seleccionada
+# 3. Consumo de API y Asincronía
+La aplicación ahora consume datos desde un endpoint dinámico (simulado/propio):
+**Gestión de Carga:** Se implementaron estados de "Cargando..." para mejorar la UX mientras se reciben los datos.
+**Manejo de Errores:** El sistema cuenta con bloques try/catch que muestran mensajes amigables en la interfaz en caso de fallos de conexión.
+**Asincronía Total:** Uso extensivo de async/await para garantizar que la interfaz no se bloquee durante las peticiones.
 
-# Estadísticas Calculadas
-**Temperaturas Extremas:** Identifica los picos máximos y mínimos del pronóstico.
-**Promedio Semanal:** Calcula la media aritmética de las temperaturas máximas.
-**Resumen de Aventurero:** Un mensaje de advertencia o sugerencia que cambia según el clima predominante.
+# 4. Optimizaciones de Alto Impacto
+Para esta entrega se realizaron mejoras críticas de rendimiento y diseño visual:
+**Optimización de Recursos (Íconos):** Se sustituyeron imágenes pesadas por una implementación avanzada de Bootstrap Icons 
+con colores semánticos dinámicos vía CSS (Atributos data-*), reduciendo las peticiones HTTP y el peso total de carga.
+**Glassmorphism & Difuminación:** Se aplicó un diseño de "vidrio esmerilado" en las tarjetas y un fondo con filter: blur() regulado mediante pseudo-elementos (::before), logrando una estética moderna sin sacrificar legibilidad.
+**Barra de Navegación Temática:** Inserción de íconos elementales centrados con efectos de brillo 
+(drop-shadow) y escalado interactivo.
 
-# Tecnologías Utilizadas
-**JavaScript:** Ciclos, condicionales y manipulación de arreglos.
-**Bootstrap:** Sistema de grillas responsivas (Grid System) y componentes de interfaz.
-**SASS:** Preprocesador de CSS con metodología BEM.
-**Git/GitHub:** Flujo de trabajo incremental con commits descriptivos.
+# 5. Estadísticas y Alertas de Clima
+Los cálculos se realizan ahora sobre los datos frescos obtenidos de la API:
+**Algoritmos de Procesamiento:** Cálculo automático de promedios, máximas y mínimas semanales.
+**Sistema de Alertas Dinámicas:** Se activan avisos especiales 
+(ej. "Alerta de Calor" en Natlan o "Tormenta Electrizante" en Inazuma) basados en reglas lógicas aplicadas al flujo de datos asíncronos.
 
-## Instrucciones de Ejecución
-1. Clonar el repositorio.
-2. Abrir el archivo `index.html` en cualquier navegador.
+## 6. Tecnologías y Funcionalidades ES6+
+**JavaScript:** Clases, Arrow Functions, Template Literals, Desestructuración y Módulos.
+**CSS/SASS:** Filtros avanzados, transformaciones y variables para temas dinámicos.
+**Git:** Flujo de trabajo con más de 3 commits descriptivos para demostrar desarrollo incremental.
+
+## 7. Instrucciones de Ejecución
+Clonar el repositorio.
+Para el correcto funcionamiento de las funciones asíncronas (fetch), el proyecto no debe abrirse directamente como un archivo local.
+Abrir la carpeta del proyecto en Visual Studio Code.
+Ejecutar mediante la extensión Open with Live Server (o similar) en index.html (click derecho) para iniciar un servidor local.
+Navegar por la aplicación desde la dirección local proporcionada (ej. http://127.0.0.1:5500).
