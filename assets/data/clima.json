@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "nombre": "Mondstadt",
+    "tempActual": 22,
+    "estadoActual": "Despejado",
+    "icono": "bi-sun",
+    "humedad": "40%",
+    "viento": "10 km/h",
+    "pronosticoSemanal": [
+      { "dia": "Lun", "min": 15, "max": 25, "estado": "Soleado" },
+      { "dia": "Mar", "min": 14, "max": 24, "estado": "Nublado" },
+      { "dia": "Mie", "min": 16, "max": 26, "estado": "Soleado" },
+      { "dia": "Jue", "min": 18, "max": 27, "estado": "Soleado" },
+      { "dia": "Vie", "min": 15, "max": 23, "estado": "Lluvia" },
+      { "dia": "Sab", "min": 14, "max": 22, "estado": "Nublado" },
+      { "dia": "Dom", "min": 16, "max": 25, "estado": "Soleado" }
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Espinadragón",
+    "tempActual": -15,
+    "estadoActual": "Ventisca",
+    "icono": "bi-snow",
+    "humedad": "15%",
+    "viento": "40 km/h",
+    "pronosticoSemanal": [
+      { "dia": "Lun", "min": -20, "max": -10, "estado": "Nieve" },
+      { "dia": "Mar", "min": -22, "max": -12, "estado": "Ventisca" },
+      { "dia": "Mie", "min": -18, "max": -8, "estado": "Nieve" },
+      { "dia": "Jue", "min": -25, "max": -15, "estado": "Ventisca" },
+      { "dia": "Vie", "min": -20, "max": -10, "estado": "Nieve" },
+      { "dia": "Sab", "min": -19, "max": -9, "estado": "Nieve" },
+      { "dia": "Dom", "min": -18, "max": -7, "estado": "Nieve" }
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Puerto de Liyue",
+    "tempActual": 28,
+    "estadoActual": "Soleado",
+    "icono": "bi-brightness-high",
+    "humedad": "55%",
+    "viento": "12 km/h",
+    "pronosticoSemanal": [
+      { "dia": "Lun", "min": 20, "max": 30, "estado": "Soleado" },
+      { "dia": "Mar", "min": 22, "max": 32, "estado": "Caluroso" },
+      { "dia": "Mie", "min": 21, "max": 29, "estado": "Soleado" },
+      { "dia": "Jue", "min": 20, "max": 28, "estado": "Nublado" },
+      { "dia": "Vie", "min": 23, "max": 33, "estado": "Caluroso" },
+      { "dia": "Sab", "min": 22, "max": 31, "estado": "Soleado" },
+      { "dia": "Dom", "min": 21, "max": 30, "estado": "Soleado" }
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Inazuma",
+    "tempActual": 24,
+    "estadoActual": "Tormentoso",
+    "icono": "bi-cloud-lightning",
+    "humedad": "75%",
+    "viento": "30 km/h",
+    "pronosticoSemanal": [
+      { "dia": "Lun", "min": 18, "max": 26, "estado": "Lluvia" },
+      { "dia": "Mar", "min": 19, "max": 25, "estado": "Tormenta" },
+      { "dia": "Mie", "min": 20, "max": 24, "estado": "Tormenta" },
+      { "dia": "Jue", "min": 18, "max": 26, "estado": "Nublado" },
+      { "dia": "Vie", "min": 19, "max": 27, "estado": "Lluvia" },
+      { "dia": "Sab", "min": 20, "max": 25, "estado": "Tormenta" },
+      { "dia": "Dom", "min": 19, "max": 26, "estado": "Lluvia" }
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "Isla Seirai (Inazuma)",
+    "tempActual": 22,
+    "estadoActual": "Electrificado",
+    "icono": "bi-lightning-charge",
+    "humedad": "70%",
+    "viento": "35 km/h",
+    "pronosticoSemanal": [
+      { "dia": "Lun", "min": 18, "max": 24, "estado": "Tormenta" },
+      { "dia": "Mar", "min": 17, "max": 23, "estado": "Tormenta" },
+      { "dia": "Mie", "min": 19, "max": 25, "estado": "Rayos" },
+      { "dia": "Jue", "min": 18, "max": 24, "estado": "Tormenta" },
+      { "dia": "Vie", "min": 17, "max": 22, "estado": "Tormenta" },
+      { "dia": "Sab", "min": 20, "max": 25, "estado": "Rayos" },
+      { "dia": "Dom", "min": 18, "max": 24, "estado": "Tormenta" }
+    ]
+  },
+  {
+    "id": 6,
+    "nombre": "Bosque Avidya",
+    "tempActual": 26,
+    "estadoActual": "Lluvia",
+    "icono": "bi-cloud-rain",
+    "humedad": "85%",
+    "viento": "5 km/h",
+    "pronosticoSemanal": [
+      { "dia": "Lun", "min": 20, "max": 28, "estado": "Lluvia" },
+      { "dia": "Mar", "min": 21, "max": 27, "estado": "Húmedo" },
+      { "dia": "Mie", "min": 22, "max": 29, "estado": "Lluvia" },
+      { "dia": "Jue", "min": 21, "max": 28, "estado": "Lluvia" },
+      { "dia": "Vie", "min": 20, "max": 27, "estado": "Húmedo" },
+      { "dia": "Sab", "min": 22, "max": 30, "estado": "Soleado" },
+      { "dia": "Dom", "min": 21, "max": 28, "estado": "Lluvia" }
+    ]
+  },
+  {
+    "id": 7,
+    "nombre": "Desierto de Hadramavet",
+    "tempActual": 42,
+    "estadoActual": "Tormenta de Arena",
+    "icono": "bi-wind",
+    "humedad": "5%",
+    "viento": "60 km/h",
+    "pronosticoSemanal": [
+      { "dia": "Lun", "min": 25, "max": 40, "estado": "Caluroso" },
+      { "dia": "Mar", "min": 26, "max": 42, "estado": "Arena" },
+      { "dia": "Mie", "min": 24, "max": 39, "estado": "Soleado" },
+      { "dia": "Jue", "min": 25, "max": 41, "estado": "Arena" },
+      { "dia": "Vie", "min": 26, "max": 43, "estado": "Caluroso" },
+      { "dia": "Sab", "min": 25, "max": 40, "estado": "Arena" },
+      { "dia": "Dom", "min": 24, "max": 38, "estado": "Soleado" }
+    ]
+  },
+  {
+    "id": 8,
+    "nombre": "Corte de Fontaine",
+    "tempActual": 20,
+    "estadoActual": "Nublado",
+    "icono": "bi-cloud-sun",
+    "humedad": "60%",
+    "viento": "15 km/h",
+    "pronosticoSemanal": [
+      { "dia": "Lun", "min": 16, "max": 22, "estado": "Nublado" },
+      { "dia": "Mar", "min": 15, "max": 21, "estado": "Lluvia" },
+      { "dia": "Mie", "min": 17, "max": 23, "estado": "Soleado" },
+      { "dia": "Jue", "min": 16, "max": 22, "estado": "Lluvia" },
+      { "dia": "Vie", "min": 15, "max": 20, "estado": "Nublado" },
+      { "dia": "Sab", "min": 17, "max": 24, "estado": "Soleado" },
+      { "dia": "Dom", "min": 16, "max": 22, "estado": "Lluvia" }
+    ]
+  },
+  {
+    "id": 9,
+    "nombre": "Snezhnaya",
+    "tempActual": -30,
+    "estadoActual": "Hielo Eterno",
+    "icono": "bi-cloud-snow-fill",
+    "humedad": "10%",
+    "viento": "50 km/h",
+    "pronosticoSemanal": [
+      { "dia": "Lun", "min": -35, "max": -25, "estado": "Nieve" },
+      { "dia": "Mar", "min": -32, "max": -22, "estado": "Nieve" },
+      { "dia": "Mie", "min": -38, "max": -28, "estado": "Hielo" },
+      { "dia": "Jue", "min": -35, "max": -25, "estado": "Nieve" },
+      { "dia": "Vie", "min": -40, "max": -30, "estado": "Ventisca" },
+      { "dia": "Sab", "min": -29, "max": -19, "estado": "Nieve" },
+      { "dia": "Dom", "min": -31, "max": -21, "estado": "Nieve" }
+    ]
+  },
+  {
+    "id": 10,
+    "nombre": "Gran Volcán de Tollan (Natlan)",
+    "tempActual": 38,
+    "estadoActual": "Cenizas",
+    "icono": "bi-fire",
+    "humedad": "12%",
+    "viento": "20 km/h",
+    "pronosticoSemanal": [
+      { "dia": "Lun", "min": 30, "max": 40, "estado": "Calor" },
+      { "dia": "Mar", "min": 32, "max": 42, "estado": "Cenizas" },
+      { "dia": "Mie", "min": 28, "max": 38, "estado": "Calor" },
+      { "dia": "Jue", "min": 31, "max": 41, "estado": "Cenizas" },
+      { "dia": "Vie", "min": 35, "max": 45, "estado": "Fuego" },
+      { "dia": "Sab", "min": 33, "max": 43, "estado": "Cenizas" },
+      { "dia": "Dom", "min": 30, "max": 40, "estado": "Calor" }
+    ]
+  },
+  {
+    "id": 11,
+    "nombre": "Nod Krai",
+    "tempActual": 15,
+    "estadoActual": "Lluvia Inversa",
+    "icono": "bi-cloud-upload",
+    "humedad": "90%",
+    "viento": "10 km/h",
+    "pronosticoSemanal": [
+      { "dia": "Lun", "min": 10, "max": 18, "estado": "Lluvia" },
+      { "dia": "Mar", "min": 11, "max": 17, "estado": "Lluvia" },
+      { "dia": "Mie", "min": 12, "max": 19, "estado": "Inversa" },
+      { "dia": "Jue", "min": 10, "max": 18, "estado": "Lluvia" },
+      { "dia": "Vie", "min": 11, "max": 17, "estado": "Inversa" },
+      { "dia": "Sab", "min": 12, "max": 19, "estado": "Lluvia" },
+      { "dia": "Dom", "min": 10, "max": 18, "estado": "Lluvia" }
+    ]
+  },
+  {
+    "id": 12,
+    "nombre": "Celestia",
+    "tempActual": 10,
+    "estadoActual": "Etéreo",
+    "icono": "bi-magic",
+    "humedad": "0%",
+    "viento": "100 km/h",
+    "pronosticoSemanal": [
+      { "dia": "Lun", "min": 5, "max": 15, "estado": "Viento" },
+      { "dia": "Mar", "min": 6, "max": 14, "estado": "Etéreo" },
+      { "dia": "Mie", "min": 5, "max": 15, "estado": "Viento" },
+      { "dia": "Jue", "min": 8, "max": 12, "estado": "Etéreo" },
+      { "dia": "Vie", "min": 5, "max": 15, "estado": "Viento" },
+      { "dia": "Sab", "min": 7, "max": 13, "estado": "Etéreo" },
+      { "dia": "Dom", "min": 5, "max": 15, "estado": "Viento" }
+    ]
+  }
+]
